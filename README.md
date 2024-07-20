@@ -1,4 +1,7 @@
-# React + Vite
+
+https://vercel.com/rutus-projects-2ab94ea0/hexa-ecommerce-app-tce8
+
+React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
