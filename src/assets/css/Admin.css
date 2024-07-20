@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --firstcolor: orange;
+    --darkblack: #2a2a2a;
+
+}
+
+/* ADMIN-LOGIN */
+#admin-login button {
+    margin-left: -0.75rem;
+}
+
+/* ADMIN-LOGOUT */
+#admin-logout {
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.349), black), url("https://www.akamai.com/site/en/images/blog/2022/thumnails/guardicore-thumbnail.png") no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    place-items: center;
+}
+
+#admin-logout .logout {
+    background-color: rgba(211, 211, 211, 0.24);
+}
+
+.logout-btn:hover {
+    animation: shakeX 1s alternate !important;
+}
+
+/* ADMIN-DASHBORD */
+/* admin-layout style */
+.admin-layout-left {
+    width: 20% !important;
+    float: left;
+}
+
+.admin-layout-right {
+    width: 80% !important;
+    float: right;
+}
+
+/* ADMIN-HEADER */
+#admin-header {
+    background-color: var(--darkblack);
+    position: fixed !important;
+    top: 0 !important;
+    width: 80%;
+    z-index: 100;
+}
+
+.admin-header-right img {
+    width: 50px !important;
+}
+
+.admin-header-right .dropdown-toggle:hover .dropdown-menu {
+    display: block !important;
+}
+
+/* ADMIN-SIDEBAR */
+#admin-sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    height: 100vh;
+    width: 20%;
+    background: radial-gradient(rgb(255, 255, 255) 56.4%, var(--darkblack) 43.6%) no-repeat;
+    background-size: 200% 110%;
+    /* background-color: var(--darkblack); */
+    z-index: 2;
+}
+
+.admin-sidebar .profile h1 a {
+    color: var(--firstcolor);
+    text-decoration: none;
+}
+
+.admin-sidebar .sidebar-row {
+    margin: 0 !important;
+}
+
+.admin-sidebar .profile .blinking {
+    border-radius: 50%;
+    font-size: 15px;
+    color: transparent;
+    background-color: #1f702b !important;
+    animation: blink 1s alternate infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.category-list {
+    overflow-y: auto;
+}
+
+.category ul li {
+    list-style-type: none;
+    padding: 3%;
+}
+
+.category-icons {
+    width: 2rem;
+    color: var(--firstcolor);
+    background-color: white;
+    text-align: center;
+    padding: 3.5% 0%;
+    transition: 0.2s ease;
+}
+
+.category-list ul li ul li {
+    width: 100%;
+}
+
+.category .dropdown-menu {
+    overflow: hidden !important;
+}
+
+.category .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.category .dropdown-menu li:hover {
+    transform: scale(1.1);
+    background-color: darkgray;
+}
+
+.category ul li a {
+    text-decoration: none;
+    color: #0dcaf0;
+}
+
+.category ul li a:hover {
+    color: var(--firstcolor);
+}
+
+.category ul li a:hover .category-icons {
+    box-shadow: 0px 0px 5px 3px var(--firstcolor) !important;
+}
+
+/* ADMIN-CONTET */
+#admin-content {
+    margin-top: 4.5rem;
+    overflow-x: hidden;
+}
+
+#admin-content .counting {
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+.fa-pencil,
+.fa-trash {
+    cursor: pointer;
+}
+
+/* ADMIN-FOOTER */
+#admin-footer {
+    width: 100%;
+    background-color: var(--darkblack);
+    color: white;
+}
+
+/* ADMIN-MANAGE-CATEGORY */
+.datatable {
+    position: relative;
+    width: 100% !important;
+}
+
+.datatable-head th {
+    background-color: black;
+    color: white;
+    padding: 1% 2%;
+}
+
+.datatable .datatable-body {
+    height: 357px !important;
+    overflow: auto !important;
+}
+
+.datatable .datatable-head tr th,
+.datatable .datatable-body tr td {
+    padding: 1%;
+}
+
+.datatable .datatable-body tr:hover {
+    background-color: lightblue !important;
+}
+
+.datatable .action {
+    cursor: pointer;
+}
+
+#manage-product .datatable-head th {
+    padding: 0.5% 0;
+    font-size: 0.7rem;
+}
+
+/* ADMIN-MANAGE-CONTACT */
+#manage-contact {
+    position: relative !important;
+}
+
+#addcity {
+    height: 100% !important;
+}
+
+#addcity #admin-footer {
+    position: absolute;
+    bottom: 0 !important;
+}
+
+/* ADMIN-ADD STATE */
+#add-state,
+#add-city,
+#update-city,
+#update-state,
+#update-footer {
+    height: 80.9vh;
+}
+#update-footer {
+    height: 88.6vh;
+}
+#update-footer #admin-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* ADMIN-MANAGE-FOOTER */
+#manage-footer,
+#manage-review {
+    height: 85vh;
+}
